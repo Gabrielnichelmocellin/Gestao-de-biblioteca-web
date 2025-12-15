@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.header {
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.login-box h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.btn {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(46, 204, 113, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.secao {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.secao h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao h3 {
+    color: #34495e;
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.form-rapido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.form-rapido > div {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-acao {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-acao:hover {
+    background: #2980b9;
+}
+
+.btn-voltar {
+    background: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.tabela-simples {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-simples th {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabela-simples td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-simples tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-simples tr:hover {
+    background-color: #f5f7fa;
+}
+
+.form-emprestimo {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.form-emprestimo input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#mensagem, #msgUsuario, #msgLivro, #msgEmprestimo {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #7f8c8d;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .form-rapido {
+        grid-template-columns: 1fr;
+    }
+    
+    .login-box {
+        padding: 25px;
+        margin: 20px auto;
+    }
+}
+
+/* Adicione no final do arquivo estilo.css */
+
+/* Estilos para tabelas de empréstimos */
+.tabela-emprestimos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-emprestimos th {
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabela-emprestimos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-emprestimos tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-emprestimos tr:hover {
+    background-color: #f5f7fa;
+}
+
+/* Botões de ação */
+.btn-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-acao-pequeno {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-devolver {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-devolver:hover {
+    background: #219653;
+}
+
+.btn-cancelar {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background: #c0392b;
+}
+
+.btn-perigo {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-perigo:hover {
+    background: #c0392b;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-emprestado {
+    background-color: #f39c12;
+    color: white;
+}
+
+.status-devolvido {
+    background-color: #27ae60;
+    color: white;
+}
+
+.status-cancelado {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Campos de entrada para IDs */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Mensagens */
+#msgDevolucao, #msgCancelamento {
+    min-height: 20px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-acoes {
+        flex-direction: column;
+    }
+    
+    .btn-acao-pequeno {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .tabela-emprestimos {
+        font-size: 14px;
+    }
+    
+    .tabela-emprestimos th,
+    .tabela-emprestimos td {
+        padding: 8px 10px;
+    }
+}

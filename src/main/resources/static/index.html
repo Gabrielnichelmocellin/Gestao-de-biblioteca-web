@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sistema Biblioteca</h1>
+        </div>
+        
+        <div class="login-box">
+            <h2>Login</h2>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Usuário (email):</label>
+                    <input type="text" id="usuario" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-group">
+                    <label>Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <button type="button" id="btnLogin" class="btn">Entrar</button>
+            </form>
+            
+            <p id="mensagem"></p>
+            <p><small>Use qualquer email e senha </small></p>
+        </div>
+        
+        <div class="footer">
+            <p>Projeto Integrador - Etapa 9 (Back-end Spring Boot)</p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

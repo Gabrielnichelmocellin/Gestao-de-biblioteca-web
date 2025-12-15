@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Dashboard</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sistema Biblioteca</h1>
+            <p>Dashboard</p>
+        </div>
+        
+        <div class="dashboard-container">
+
+            <div class="secao">
+                <h2>Cadastro </h2>
+                <div class="form-rapido">
+                    <div>
+                        <h3>Cadastrar Usuário</h3>
+                        <input type="text" id="nomeUsuario" placeholder="Nome completo">
+                        <input type="text" id="cpfUsuario" placeholder="CPF">
+                        <select id="tipoUsuario">
+                            <option value="">Tipo de usuário</option>
+                            <option value="cliente">Cliente</option>
+                            <option value="admin">Administrador</option>
+                        </select>
+                        <button class="btn-acao" id="btnSalvarUsuario">Salvar Usuário</button>
+                        <p id="msgUsuario"></p>
+                    </div>
+                    
+                    <div>
+                        <h3>Cadastrar Livro</h3>
+                        <input type="text" id="tituloLivro" placeholder="Título do livro">
+                        <input type="text" id="autorLivro" placeholder="Autor">
+                        <button class="btn-acao" id="btnSalvarLivro">Salvar Livro</button>
+                        <p id="msgLivro"></p>
+                    </div>
+                </div>
+            </div>
+            
+      
+            <div class="secao">
+                <h2> Consultas</h2>
+                
+                <h3>Usuários Cadastrados</h3>
+                <table class="tabela-simples" id="tabelaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+                
+                <h3>Livros Cadastrados</h3>
+                <table class="tabela-simples" id="tabelaLivros">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Disponível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="secao">
+                <h2>Registrar Empréstimo</h2>
+                <div class="form-emprestimo">
+                    <input type="text" id="cpfEmprestimo" placeholder="CPF do usuário">
+                    <input type="text" id="livroEmprestimo" placeholder="Título do livro">
+                    <button class="btn-acao" id="btnEmprestimo">Registrar Empréstimo</button>
+                    <p id="msgEmprestimo"></p>
+                </div>
+            </div>
+        </div>
+        
+<div class="secao">
+    <h2>Empréstimos e Devoluções</h2>
+    
+    <div class="mensagem-status">
+        <p id="msgStatusEmprestimos"></p>
+    </div>
+    
+    <h3>Empréstimos Ativos</h3>
+    <table class="tabela-simples" id="tabelaEmprestimosAtivos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CPF</th>
+                <th>Livro</th>
+                <th>Data Empréstimo</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    
+    <h3> Histórico de Devoluções</h3>
+    <table class="tabela-simples" id="tabelaDevolucoes">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CPF</th>
+                <th>Livro</th>
+                <th>Data Empréstimo</th>
+                <th>Data Devolução</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+        
+        <a href="index.html" class="btn-voltar">Sair</a>
+        
+        <div class="footer">
+            <p>Projeto Integrador - Etapa 8 </p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
